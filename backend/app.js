@@ -11,7 +11,7 @@ const profileRoutes = require("./routes/profileRoutes");
 app.use(express.json());
 app.use(cors());
 
-const mongoUrl = process.env.MONGODB_URL;
+const mongoUrl = "mongodb+srv://anniagg2003:annanay123456@chat-app.k7eirmx.mongodb.net/?retryWrites=true&w=majority&appName=chat-app";
 mongoose.connect(mongoUrl, err => {
   if (err) throw err;
   console.log("Mongodb connected...");
